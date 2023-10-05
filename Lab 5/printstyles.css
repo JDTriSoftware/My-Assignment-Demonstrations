@@ -1,0 +1,22 @@
+/* Author: Justin Triantafilou, 000775460 */
+@media print {
+    * {
+        background-color: white;
+        color: black;
+        border: 5px solid white;
+    }
+    .sched {
+        border: 2px solid white;
+    }
+    nav {
+        display: none;
+    }
+
+    .btn {
+        background-color: white;
+    }
+
+    footer {
+        display: none;
+    }
+}

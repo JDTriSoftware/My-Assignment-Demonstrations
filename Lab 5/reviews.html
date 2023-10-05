@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Outdoor Adventure Reviews</title>
+        <!-- Author: Justin Triantafilou, 000775460 -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type ="text/css" href="adventurestyles.css">
+        <link rel="stylesheet" type ="text/css" href="mobile.css">
+        <link rel="stylesheet" type ="text/css" href="printstyles.css">
+        <style>
+            form {
+                background-color: rebeccapurple;
+                color:white;
+                width: 55%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15px;
+                padding: 10px;
+                border: 3px solid black;
+            }
+
+            body {
+                font-size: 18px;
+            }
+
+            div {
+                padding: 2px;
+            }
+
+            fieldset {
+                border: 3px solid white;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            input {
+				border: 2px outset grey;
+				background-color: orchid;
+            }
+
+            .otherRemoveOrchid input {
+                border-style: none;
+                background-color: white;
+            }
+            .name {
+                padding-left: 50px;
+            }
+            .name input {
+                margin-left: 8px;
+                font-size: 12px;
+            }
+
+            .address {
+                padding-left: 20px;
+            }
+
+            .address input {
+                margin-left: 8px;
+                font-size: 12px;
+            }
+
+            .btn {
+                font-size: 13px;
+                padding: 3px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            select {
+                font-size: 15px;
+            }
+            .spaceBetween {
+                padding-top: 8px;
+            }
+            .submitScreenShot img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Outdoor Adventure Seminars <br> 2022/2023</h1>
+        </header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="/seminars.html">Seminars</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form method="post" action=" https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+            <input type="hidden" name="formname" value="JustinTiantafilouTripReview">
+            <fieldset>
+                <legend>About You (Optional)</legend>
+                <label for="tripTime">I usually prefer to take trips this time of year (select all that apply):</label>
+                <div>
+                    <select name="tripTime" multiple size="4" id="tripTime">
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value ="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <label>First Name</label>
+                    <input type="text" name="firstName" size="20" maxlength="20">
+                </div>
+                <div class="name">
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" size="20" maxlength="20">
+                </div>
+                <div class="address">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" size="12" maxlength="12" placeholder="123-456-7890">
+                </div>
+                <div class="address">
+					<label>Email Address</label>
+					<input type="email" name="email" size="40" maxlength="40" placeholder="name@example.com">
+				</div>
+            </fieldset>
+            <fieldset>
+                <legend>Trip Reviews</legend>
+                <div>
+                    <select name="tripSelection">
+                        <option value="Alberta Rural">Alberta Rural</option>
+                        <option selected value="B.C Coast">B.C Coast</option>   
+                        <option value="Ontario Lake Superior">Ontario Lake Superior</option>
+                        <option value="PEI">PEI</option>
+                        <option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+                    </select>
+                    <select name="tripLengthDays">
+                        <option value="5d">5 days</option>
+                        <option value="7d">7 days</option>   
+                        <option value="10d">10 days</option>
+                        <option value="14d">14 days</option>
+                    </select>
+                </div>
+                <p class="spaceBetween">Your rating:</p>
+                <div>
+                    <input type="radio" name="rating" value="4" id="4" checked="checked">
+                    <label for="4"><img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" value="3" id="3">
+                    <label for="3"><img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" value="2" id="2">
+                    <label for="2"><img src="images/wheel_sm.jpg" alt="five star">
+                        <img src="images/wheel_sm.jpg" alt="five star">
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" value="1" id="1">
+                    <label for="1"><img src="images/wheel_sm.jpg" alt="five star"></label>
+                </div>
+                <div>
+                    <p>Comments</p>
+                    <textarea name="comments" rows="7" cols="65"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>I would be interested in these trips: (check all that apply):</legend>
+                <div>
+                    <input type="checkbox" name="tripWish" value="seaOrLake" id="seaOrLake">
+                    <label for="seaOrLake">Sea or Lake</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tripWish" value="rural" id="rural">
+                    <label for="rural">Rural</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="tripWish" value="mountain" checked="checked" id="mountain">
+                    <label for="mountain">Mountains</label>
+                </div>
+                <div class="otherRemoveOrchid">
+                    <input type="checkbox" name="tripWish" value="otherTrip" id="otherTrip">
+                    <label for="otherTrip">Other (please specify) </label>
+                    <input type="text" name="otherTripSpecified" size="20" maxlength="20">
+                </div>
+            </fieldset>
+            <div>
+				<input type="submit" class="btn" value="SEND REVIEW">
+				<input type="reset" class="btn" value="CANCEL">
+			</div>
+        </form>
+        <div class="submitScreenShot">
+            <img src="images/DdU47oCFEj.png" alt="submission">
+        </div>
+        <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="footerImg" title="Get Healthy">
+        </footer>
+    </body>
+</html>

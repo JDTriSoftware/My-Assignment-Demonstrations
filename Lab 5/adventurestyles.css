@@ -1,0 +1,22 @@
+/* Author: Justin Triantafilou, 000775460 */
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    background-color: #E9EFFF;
+    text-align: center;
+    font-size: 45px;
+    margin: 8px;
+}
+
+
+footer {
+    border-top: 5px solid black;
+
+}
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

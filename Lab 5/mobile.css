@@ -1,0 +1,38 @@
+/* Author: Justin Triantafilou, 000775460 */
+    nav {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    nav li {
+        display: inline;
+        background-color: mediumslateblue;
+        border: 3px solid black;
+        border-bottom-style: none;
+        border-radius: 15px 15px 0 0;
+        margin: 5px;
+        padding: 10px;
+    }
+    nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    @media (max-width: 599px) {
+        nav li {
+            display: block;
+            margin: 0;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 4000px) {
+        nav li {
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    @media (min-width: 900px) {
+        nav li {
+            justify-content: space-between;
+            margin-left: 70px;
+        }
+    }
