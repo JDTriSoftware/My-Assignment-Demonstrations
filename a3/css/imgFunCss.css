@@ -1,0 +1,48 @@
+/** Author: Justin Triantafilou, 000775460 */
+body {
+    background-color: bisque;
+}
+h1 {
+    text-align: center;
+}
+#timerCont {
+    display: flex;
+    justify-content: center;
+}
+#imgConts {
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
+#randomBtnCont {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#countCont {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+#inputCont {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card-img-top {
+    animation-name: flipImage;
+    animation-duration: 2s;
+}
+
+@keyframes flipImage {
+    0% {transform: scale(0.25);}
+    25% {transform: scale(0.5);}
+    50% {transform: scale(0.75)}
+    75% {transform: scale(1);}
+}
